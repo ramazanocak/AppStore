@@ -9,7 +9,7 @@ import UIKit
 import SDWebImage
 
 class AppsSearchViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
-
+    //test
     fileprivate let cellId = "searchCellId"
     fileprivate var appResult = [Result]()
     var timer: Timer?
