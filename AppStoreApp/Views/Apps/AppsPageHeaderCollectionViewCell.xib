@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AppsPageHeaderCollectionViewCell" customModule="AppStoreApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="266" height="186"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="266" height="186"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIc-K1-QkA">
+                        <rect key="frame" x="0.0" y="0.0" width="266" height="186"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="HZR-mM-UDJ">
+                                <rect key="frame" x="0.0" y="0.0" width="266" height="186"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLY-7k-At4">
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" systemColor="linkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="komik bir sey varsa birlikte gulelim  yoksa yine de anlat" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mr-NQ-xN8">
+                                        <rect key="frame" x="0.0" y="21" width="266" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ACJ-ap-NaY">
+                                        <rect key="frame" x="0.0" y="68" width="266" height="118"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HZR-mM-UDJ" secondAttribute="bottom" id="JQs-k8-51l"/>
+                            <constraint firstItem="HZR-mM-UDJ" firstAttribute="top" secondItem="iIc-K1-QkA" secondAttribute="top" id="Y1t-b3-66c"/>
+                            <constraint firstAttribute="trailing" secondItem="HZR-mM-UDJ" secondAttribute="trailing" id="gii-Ww-ZzN"/>
+                            <constraint firstItem="HZR-mM-UDJ" firstAttribute="leading" secondItem="iIc-K1-QkA" secondAttribute="leading" id="mHC-B9-9iv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="iIc-K1-QkA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BTN-4Z-YmM"/>
+                <constraint firstItem="iIc-K1-QkA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="U3V-qC-2y2"/>
+                <constraint firstAttribute="trailing" secondItem="iIc-K1-QkA" secondAttribute="trailing" id="YIS-0N-1kQ"/>
+                <constraint firstAttribute="bottom" secondItem="iIc-K1-QkA" secondAttribute="bottom" id="fBV-bF-h4f"/>
+            </constraints>
+            <size key="customSize" width="266" height="186"/>
+            <connections>
+                <outlet property="companyLabel" destination="bLY-7k-At4" id="Agf-wh-Qr2"/>
+                <outlet property="imgView" destination="ACJ-ap-NaY" id="zok-rT-a0I"/>
+                <outlet property="titleLabel" destination="3Mr-NQ-xN8" id="Bcg-f5-b5L"/>
+            </connections>
+            <point key="canvasLocation" x="294.20289855072468" y="121.20535714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
